@@ -8,15 +8,17 @@ spec:
       image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/frontend:2.0.0
   imagePullSecrets:
     - name: aws-ecr
-#---
-#apiVersion: v1
-#kind: Pod
-#metadata:
-#  name: backend
-#spec:
-#  containers:
-#    - name: nginx
-#      image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+spec:
+  containers:
+    - name: backend
+      image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/backend:2.0.0
+  imagePullSecrets:
+    - name: aws-ecr
 #---
 #apiVersion: v1
 #kind: Pod
