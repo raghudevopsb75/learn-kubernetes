@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
       - name: schema
-        image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/schema:2.0.0
+        image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/expense-schema-load:2.0.0
         env:
         - name: DB_HOST
           value: mysql
