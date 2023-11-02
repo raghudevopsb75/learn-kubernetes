@@ -6,7 +6,7 @@ service:
   targetPort: 8080
 initContainers:
   enabled: true
-  imageVersion: 2.0.0
+  imageVersion: 2.0.1
   INPUT: "DB_HOST,prod.rds.endpoint"
 
 job:
